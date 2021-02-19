@@ -1,0 +1,118 @@
+# docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+#
+
+# docker inspect hello-world
+[
+    {
+        "Id": "sha256:bf756fb1ae65adf866bd8c456593cd24beb6a0a061dedf42b26a993176745f6b",
+        "RepoTags": [
+            "hello-world:latest"
+        ],
+        "RepoDigests": [
+            "hello-world@sha256:31b9c7d48790f0d8c50ab433d9c3b7e17666d6993084c002c2ff1ca09b96391d"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2020-01-03T01:21:37.263809283Z",
+        "Container": "71237a2659e6419aee44fc0b51ffbd12859d1a50ba202e02c2586ed999def583",
+        "ContainerConfig": {
+            "Hostname": "71237a2659e6",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "CMD [\"/hello\"]"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:eb850c6a1aedb3d5c62c3a484ff01b6b4aade130b950e3bf3e9c016f17f70c34",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "DockerVersion": "18.06.1-ce",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/hello"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:eb850c6a1aedb3d5c62c3a484ff01b6b4aade130b950e3bf3e9c016f17f70c34",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 13336,
+        "VirtualSize": 13336,
+        "GraphDriver": {
+            "Data": {
+                "MergedDir": "/var/lib/docker/overlay2/2920d903f75b3eaf74003d87e3a2ae2d912f97944aa1b83679f11f578f1c7b77/merged",
+                "UpperDir": "/var/lib/docker/overlay2/2920d903f75b3eaf74003d87e3a2ae2d912f97944aa1b83679f11f578f1c7b77/diff",
+                "WorkDir": "/var/lib/docker/overlay2/2920d903f75b3eaf74003d87e3a2ae2d912f97944aa1b83679f11f578f1c7b77/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:9c27e219663c25e0f28493790cc0b88bc973ba3b1686355f221c38a36978ac63"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
+# 
+
+
