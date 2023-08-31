@@ -1,0 +1,10 @@
+echo 'hello world' >> file.txt
+
+docker run -d -it \
+   --mount type=bind,source="$(pwd)"/file.txt,target=/file.txt,readonly \
+   alpine:latest
+
+
+$ docker exec  292295801a22 cat /file.txt
+hello world
+$
