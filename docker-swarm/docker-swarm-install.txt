@@ -25,4 +25,7 @@ docker service inspect --pretty helloworld
 
   docker service ps helloworld
 
+docker service logs helloworld -f
+
+
   
