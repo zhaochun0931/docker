@@ -1,0 +1,5 @@
+docker run --rm -d -it --name nginx -p 80:80  nginx
+
+
+docker exec -it nginx bash
+
