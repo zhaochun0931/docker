@@ -4,7 +4,4 @@ docker exec -it myalpine sh
 
 
 
-apk update
-apk add nginx
-apk add curl
 
