@@ -2,6 +2,8 @@ version: '2'
 services:
   databases:
     image: mysql
+    networks:
+      - xxx-network
     ports:
       - "3306:3306"
     environment:
@@ -11,6 +13,15 @@ services:
       - MYSQL_DATABASE=demo
   web:
     image: nginx
+    networks:
+      - xxx-network
   os:
     image: ubuntu
+    networks:
+      - xxx-network
     tty: true
+
+networks:
+  xxx-network:
+    name: rabbitmq_vnet
+    external: true
