@@ -15,12 +15,16 @@ services:
     image: nginx
     networks:
       - xxx-network
-  os:
+  os1:
     image: ubuntu
     networks:
       - xxx-network
     tty: true
-
+  os2:
+    build: .
+    networks:
+      - xxx-network
+    tty: true
 networks:
   xxx-network:
     name: rabbitmq_vnet
