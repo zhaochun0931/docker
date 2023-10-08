@@ -11,3 +11,6 @@ services:
       - MYSQL_DATABASE=demo
   web:
     image: nginx
+  os:
+    image: ubuntu
+    tty: true
