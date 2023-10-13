@@ -1,0 +1,25 @@
+version: '2'
+services:
+  mybackend:
+    image: mynodejs
+    deploy:
+      replicas: 3
+    networks:
+      - xxx
+  myhaproxy:
+    image: haproxy
+    volumes:
+      - type: bind
+        source: ./haproxy/
+        target: /usr/local/etc/haproxy/
+      # - ./haproxy:/usr/local/etc/haproxy
+    depends_on:
+      - mybackend
+    networks:
+      - xxx
+    ports:
+      - 80:80
+      - 8404:8404
+networks:
+  xxx:
+    driver: bridge
