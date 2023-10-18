@@ -1,4 +1,4 @@
-docker run --rm -it -d --name myubuntu ubuntu
+docker run --rm -it -d --name ubuntu ubuntu
 
 
 
