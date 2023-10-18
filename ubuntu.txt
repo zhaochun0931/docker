@@ -2,3 +2,6 @@ docker run --rm -it -d --name ubuntu ubuntu
 
 
 
+apt update
+apt install vim
+
