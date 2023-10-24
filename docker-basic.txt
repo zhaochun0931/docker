@@ -9,3 +9,9 @@ docker cp container:src_path dest_path
 
 # docker mirror
 
+
+"registry-mirrors": ["https://docker.mirrors.sjtug.sjtu.edu.cn"]
+
+
+docker info
+
