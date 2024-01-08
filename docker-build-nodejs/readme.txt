@@ -1,4 +1,4 @@
-docker image build -t myapp .
+docker build -t myapp .
 
 
 docker run --rm -d --name myapp -p 8888:8080 -it myapp
