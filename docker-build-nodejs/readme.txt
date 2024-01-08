@@ -1,4 +1,3 @@
-
 docker image build -t mynodejs .
 
 
