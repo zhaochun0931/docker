@@ -1,7 +1,7 @@
-docker image build -t mynodejs .
+docker image build -t myapp .
 
 
-docker run --rm -d --name mynodejs -p 8888:8080 -it mynodejs
+docker run --rm -d --name myapp -p 8888:8080 -it myapp
 
 
 $ curl localhost:8888
