@@ -1,5 +1,25 @@
-docker run --rm -d -it --name nginx -p 80:80  nginx
+docker run --rm -d -it --name nginx -p 8080:80 nginx
+
+docker port nginx
+
+# docker port nginx
+80/tcp -> 0.0.0.0:8080
+80/tcp -> [::]:8080
+#
+
+
+curl localhost:8080
+
+
+
+
 
 
 docker exec -it nginx bash
 
+/usr/share/nginx/html/index.html
+
+
+
+# mount the local directory /tmp/html to the directory /usr/share/nginx/html of the container
+docker run --rm -d -it --name nginx -p 8080:80 -v /tmp/html:/usr/share/nginx/html nginx
