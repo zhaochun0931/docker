@@ -23,3 +23,11 @@ docker info
 
 docker version
 docker network list
+
+
+
+
+
+
+# first container
+docker run -i -t ubuntu /bin/bash
