@@ -1,3 +1,7 @@
+Docker has a client-server architecture. It has a single binary, docker, that can act as both client and server. 
+As a client, the docker binary passes requests to the Docker daemon, and then processes those requests when they are returned.
+
+
 The docker cp command allows you to copy files and directories from a container's file system to your local machine, whether the container is running or stopped.
 
 docker cp container:src_path dest_path 
