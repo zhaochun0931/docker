@@ -21,5 +21,32 @@ docker exec -it nginx bash
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # mount the local directory /tmp/html to the directory /usr/share/nginx/html of the container
 docker run --rm -d -it --name nginx -p 8080:80 -v /tmp/html:/usr/share/nginx/html nginx
+
+
+
+
+echo hello xxx > index.html
+docker run --rm -d -it --name nginx -p 8080:80 -v $(PWD):/usr/share/nginx/html nginx
+
+$ curl localhost:8080
+hello xxx
+$
