@@ -1,3 +1,10 @@
+When creating Docker volumes using docker volume create, you cannot directly specify a directory on the host machine where the volume data will be stored. 
+Docker manages the location and storage of volumes internally and does not expose the directory path directly to users in this command.
+
+
+
+
+
 docker volume create xxx
 
 docker volume ls
@@ -20,4 +27,14 @@ $ docker volume inspect xxx
     }
 ]
 $
+
+
+
+
+
+
+
+However, you can achieve a similar result by using Docker bind mounts instead of volumes.
+
+
 
