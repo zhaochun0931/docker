@@ -3,7 +3,21 @@ docker volume create xxx
 docker volume ls
 
 
+docker volume inspect xxx
 
 
 
+$ docker volume inspect xxx
+[
+    {
+        "CreatedAt": "2024-07-07T02:38:40Z",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/xxx/_data",
+        "Name": "xxx",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+$
 
