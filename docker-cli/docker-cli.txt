@@ -8,3 +8,15 @@ docker inspect container_name
 
 
 docker exec -it container_name bash
+docker exec -it container_name sh
+
+
+
+
+
+docker run -it -d --rm --name container_name image_name
+docker stop container_name
+
+
+
+
