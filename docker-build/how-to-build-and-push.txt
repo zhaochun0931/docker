@@ -24,8 +24,8 @@ $
 
 
 
-# push to docker hub
-docker login
-docker tag myapp Your_docker_account_username/myapp
-docker push Your_docker_account_username/myapp
 
+# push the local image to docker hub
+docker login
+docker tag mywebserver xman1111/mywebserver
+docker push xman1111/mywebserver
