@@ -1,13 +1,25 @@
-# build the image
-docker build -t myapp .
+# build the docker image
+docker build -t mywebserver .
 docker images
 
-docker run --rm -d --name myapp -p 8888:8080 -it myapp
+
+# run the image
+docker run --rm -d -p 8888:8080 -it mywebserver
 
 
 $ curl localhost:8888
 You've hit 7dc58d7639c2
 $
+
+
+
+
+
+
+
+
+
+
 
 
 
