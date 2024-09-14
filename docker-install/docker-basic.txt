@@ -6,3 +6,9 @@ container
 |
 |
 |
+
+
+
+
+
+Docker Hub is the public registry provided by Docker Inc
