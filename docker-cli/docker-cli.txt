@@ -20,3 +20,11 @@ docker stop container_name
 
 
 
+
+docker version
+docker info
+
+
+
+
+
