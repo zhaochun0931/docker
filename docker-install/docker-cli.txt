@@ -19,6 +19,22 @@ docker stop container_name
 
 
 
+# delete docker images
+docker images
+docker image list
+
+
+docker rmi IMAGE_NAME -f
+
+
+
+
+
+
+
+
+
+
 
 
 docker version
