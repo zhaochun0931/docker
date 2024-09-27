@@ -19,6 +19,10 @@ docker stop container_name
 
 
 
+# pull the images from repository
+docker pull IMAGE_NAME
+
+
 # delete docker images
 docker images
 docker image list
