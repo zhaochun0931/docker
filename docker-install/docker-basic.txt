@@ -45,3 +45,36 @@ Short ID: By default, you can use the first 12 characters of the long ID to refe
 The docker.sock file is a Unix socket that allows the Docker client to communicate with the Docker daemon. Located at /var/run/docker.sock, it facilitates various commands and API requests for managing containers, images, networks, and volumes.
 
 It acts as a communication endpoint between the Docker client and the Docker daemon.
+
+
+
+
+
+
+/lib/systemd/system/docker.service
+
+ExecStart=/usr/bin/dockerd --containerd=/run/containerd/containerd.sock
+
+
+systemctl daemon-reload
+
+
+
+
+
+
+
+
+
+
+/etc/default/docker
+
+DOCKER_OPTS=""
+
+
+/etc/docker/daemon.json
+
+{
+"hosts": ["fd://","unix:///var/run/docker.sock","tcp://0.0.0.0:2376"]
+}
+
