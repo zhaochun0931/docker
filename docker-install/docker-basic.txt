@@ -12,3 +12,16 @@ container
 
 
 Docker Hub is the public registry provided by Docker Inc
+
+
+
+
+
+Container id:
+
+Docker container IDs can be either long or short.
+
+Long ID: This is a 64-character hexadecimal string that uniquely identifies the container.
+
+Short ID: By default, you can use the first 12 characters of the long ID to refer to a container. Docker will recognize it as long as it’s unique among other container IDs.
+
