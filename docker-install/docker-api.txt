@@ -1,0 +1,5 @@
+curl --unix-socket /var/run/docker.sock http://localhost/containers/json
+
+
+
+curl --unix-socket /var/run/docker.sock "http://localhost/containers/json?all=true" 
