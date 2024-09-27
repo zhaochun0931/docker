@@ -32,3 +32,16 @@ Long ID: This is a 64-character hexadecimal string that uniquely identifies the 
 
 Short ID: By default, you can use the first 12 characters of the long ID to refer to a container. Docker will recognize it as long as it’s unique among other container IDs.
 
+
+
+
+
+
+
+
+
+/var/run/docker.sock
+
+The docker.sock file is a Unix socket that allows the Docker client to communicate with the Docker daemon. Located at /var/run/docker.sock, it facilitates various commands and API requests for managing containers, images, networks, and volumes.
+
+It acts as a communication endpoint between the Docker client and the Docker daemon.
