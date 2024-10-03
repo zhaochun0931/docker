@@ -1,7 +1,0 @@
-docker run --rm -it -d --name myalpine alpine
-
-docker exec -it myalpine sh
-
-
-
-
