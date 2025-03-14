@@ -28,13 +28,4 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 
-# check docker engine and docker client version info
-docker version
-docker info
-
-
-
-# run the first docker container to test
-
-sudo docker run hello-world
 
