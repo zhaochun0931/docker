@@ -48,3 +48,9 @@ docker info
 
 
 
+# run the first docker container to test
+
+sudo docker run hello-world
+
+
+
