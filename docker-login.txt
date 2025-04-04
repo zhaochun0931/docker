@@ -1,8 +1,0 @@
-https://hub.docker.com/
-
-
-# cli
-
-docker login -u xman1111
-
-  
