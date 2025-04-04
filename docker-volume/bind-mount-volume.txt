@@ -1,5 +1,0 @@
-docker run -it -d --rm --name busybox -v $(PWD)/xxx-data:/xxx-data busybox
-
-
-this command will create a new directory called xxx-data in the current directory and mount it to the xxx-data in the container
-
