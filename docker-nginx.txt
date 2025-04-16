@@ -1,14 +1,4 @@
-docker run --rm -d -it --name nginx -p 8080:80 nginx
 
-docker port nginx
-
-# docker port nginx
-80/tcp -> 0.0.0.0:8080
-80/tcp -> [::]:8080
-#
-
-
-curl localhost:8080
 
 
 
