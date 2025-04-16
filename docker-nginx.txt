@@ -5,19 +5,6 @@
 
 
 
-docker exec -it nginx bash
-
-/usr/share/nginx/html/index.html
-
-
-
-
-
-
-
-
-
-
 
 
 
